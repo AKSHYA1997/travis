@@ -26,4 +26,11 @@ public class TravisControllerTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/hello",
                 String.class)).contains("Hello!");
     }
+
+
+    @Test
+    public void testSayMyName() throws Exception {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/say-my-name",
+                String.class)).contains("Ateez");
+    }
 }
