@@ -4,7 +4,7 @@ jdk: oraclejdk11
 addons:
   sonarcloud:
     organization: "akshya1997"
-    token: 5a777be777aab71e27ff0a5122c3575f7c0aa9ae
+    token: $SONARCUBE_TOKEN
 
 script:
   - ./mvnw clean install -B
