@@ -10,4 +10,9 @@ public class TravisController {
     public String sayHello() {
         return "Hello!";
     }
+
+    @GetMapping("/say-my-name")
+    public String sayMyName() {
+        return "Ateez";
+    }
 }
