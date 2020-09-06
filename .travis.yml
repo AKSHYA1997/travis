@@ -1,6 +1,12 @@
 language: java
 jdk: oraclejdk11
 
+addons:
+  sonarcloud:
+    organization: "akshya1997"
+    token:
+      secure: $SONAR_TOKEN
+
 script:
   - ./mvnw clean install -B
 
