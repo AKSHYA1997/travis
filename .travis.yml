@@ -3,3 +3,6 @@ jdk: oraclejdk11
 
 script:
   - ./mvnw clean install -B
+
+before_install:
+  - chmod +x mvnw
